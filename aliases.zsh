@@ -2,8 +2,20 @@
 ### Content for aliases.zsh file
 #
 
-# I use neovim btw
-alias vim='nvim'
+# Use the same editor
+alias vim='$EDITOR'
+alias vi='$EDITOR'
+alias code='$EDITOR'
+
+# Wifi management
+alias wifi-gui='nm-connection-editor'
+alias wifi-tui='nmtui'
+
+# SSH to Cal Poly
+alias mavillaf='ssh mavillaf@unix1.csc.calpoly.edu'
+
+alias ebrc="vim $ZSH/.zshrc" # Edit bashrc
+alias srcbrc="source $ZSH/.zshrc"
 
 # Colorized output
 alias diff='diff --color'
