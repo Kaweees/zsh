@@ -1,3 +1,8 @@
+#################
+# Let's configure zsh
+# Are you ready?
+################
+
 # Enable zsh profiling for debugging
 # zmodload zsh/zprof
 
