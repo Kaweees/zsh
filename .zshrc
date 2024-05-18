@@ -14,10 +14,12 @@ export LC_ALL=en_US.UTF-8
 # -------------------------------------------------------------------
 
 # Set the directory where the dotfiles are stored
-export DOTFILES="${XDG_CONFIG_HOME:-${HOME}/.config}/.dotfiles"
+export DOTFILES="$(dirname $(realpath "$-1"))"
+
+# "${XDG_CONFIG_HOME:-${HOME}/.config}/.dotfiles"
 
 # Set the directory where the zsh configuration is stored
-export ZSH=$DOTFILES/.config/zsh
+export ZSH="$(dirname $(realpath "$-1"))"
 
 # -------------------------------------------------------------------
 # Load prompt
@@ -52,4 +54,5 @@ export ZSH=$DOTFILES/.config/zsh
 # -------------------------------------------------------------------
 #  Start X if not already running
 # -------------------------------------------------------------------
-[[ !-z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] || exec startx &>/dev/null
+# [[ ! -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] || exec startx &>/dev/null
+

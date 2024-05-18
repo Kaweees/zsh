@@ -46,5 +46,6 @@ zinit ice wait atload'_history_substring_search_config'
 # zinit snippet OMZP::command-not-found
 
 # Shell integrations
-eval "$(fzf --zsh)" # Add FZF keybindings
-eval "$(zoxide init --cmd cd zsh)" # Add Zoxide keybindings
+# eval "$(fzf --zsh)" # Add FZF keybindings
+# eval "$(zoxide init --cmd cd zsh)" # Add Zoxide keybindings
+
