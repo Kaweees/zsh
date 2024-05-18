@@ -8,7 +8,7 @@ if [[ -f "/opt/homebrew/bin/brew" ]] then
 fi
 
 # I use neovim btw
-export EDITOR=vim
+export EDITOR=nvim
 
 # RTFM
 export MANPATH="/usr/local/man:$MANPATH"

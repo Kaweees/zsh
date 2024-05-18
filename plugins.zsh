@@ -10,9 +10,6 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-# Add in Powerlevel10k
-zinit ice depth=1; zinit light romkatv/powerlevel10k
-
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting # Syntax highlighting
 zinit light zsh-users/zsh-completions # Tab completions
@@ -24,6 +21,9 @@ zinit light Aloxaf/fzf-tab
 
 # Automatically load zsh-completions on startup
 autoload -Uz compinit && compinit
+
+# gitstatus prompt
+source ~/gitstatus/gitstatus.prompt.zsh
 
 # Replay all cached completions
 zinit cdreplay -q
