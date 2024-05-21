@@ -4,7 +4,7 @@
 ################
 
 # Enable zsh profiling for debugging
-# zmodload zsh/zprof
+zmodload zsh/zprof
 
 # Set encoding to UTF-8 for all locales
 export LC_ALL=en_US.UTF-8
