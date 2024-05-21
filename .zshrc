@@ -51,7 +51,7 @@ export ZDOTDIR=$ZSH
 # -------------------------------------------------------------------
 #  Start X if not already running
 # -------------------------------------------------------------------
-if·[[·-z·$DISPLAY·]]·&&·[[·$(tty)·=·/dev/tty1·]];·then
+if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
     startx
 fi
 
