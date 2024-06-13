@@ -24,7 +24,7 @@ setopt interactive_comments
 
 # History settings
 export HISTSIZE=10000000 # 10 million
-export HISTFILE="${ZSH}/.zsh_history" # History file location
+export HISTFILE="$HOME/.zsh_history" # History file location
 export SAVEHIST=$HISTSIZE
 export HISTDUP=erase # Erase duplicates in history
 setopt inc_append_history # Save every command before execution

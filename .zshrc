@@ -14,39 +14,39 @@ export LC_ALL=en_US.UTF-8
 # -------------------------------------------------------------------
 
 # Set the directory where the dotfiles and zsh are stored
-export DOTFILES="$(dirname $(realpath "$-1"))"
-export ZSH="$(dirname $(realpath "$-1"))"
-export ZDOTDIR=$ZSH
+export DOTFILES="$HOME/Documents/GitHub/Projects/dotfiles"
+export ZSH="$HOME/.oh-my-zsh"
+export ZDOTDIR=$HOME
 
 # -------------------------------------------------------------------
 # Load prompt
 # -------------------------------------------------------------------
-[[ ! -f $ZSH/prompt.zsh ]] || source $ZSH/prompt.zsh
+[[ ! -f $ZDOTDIR/prompt.zsh ]] || source $ZDOTDIR/prompt.zsh
 
 # -------------------------------------------------------------------
 # Load plugins
 # -------------------------------------------------------------------
-[[ ! -f $ZSH/plugins.zsh ]] || source $ZSH/plugins.zsh
+[[ ! -f $ZDOTDIR/plugins.zsh ]] || source $ZDOTDIR/plugins.zsh
 
 # -------------------------------------------------------------------
 # Load environment variables
 # -------------------------------------------------------------------
-[[ ! -f $ZSH/env.zsh ]] || source $ZSH/env.zsh
+[[ ! -f $ZDOTDIR/env.zsh ]] || source $ZDOTDIR/env.zsh
 
 # -------------------------------------------------------------------
 # Load aliases
 # -------------------------------------------------------------------
-[[ ! -f $ZSH/aliases.zsh ]] || source $ZSH/aliases.zsh
+[[ ! -f $ZDOTDIR/aliases.zsh ]] || source $ZDOTDIR/aliases.zsh
 
 # -------------------------------------------------------------------
 # Load functions
 # -------------------------------------------------------------------
-[[ ! -f $ZSH/functions.zsh ]] || source $ZSH/functions.zsh
+[[ ! -f $ZDOTDIR/functions.zsh ]] || source $ZDOTDIR/functions.zsh
 
 # -------------------------------------------------------------------
 # Load keybinds
 # -------------------------------------------------------------------
-[[ ! -f $ZSH/keybinds.zsh ]] || source $ZSH/keybinds.zsh
+[[ ! -f $ZDOTDIR/keybinds.zsh ]] || source $ZDOTDIR/keybinds.zsh
 
 # -------------------------------------------------------------------
 #  Start X if not already running

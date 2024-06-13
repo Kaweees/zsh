@@ -14,8 +14,8 @@ alias wifi-tui='nmtui'
 # SSH to Cal Poly
 alias mavillaf='ssh mavillaf@unix1.csc.calpoly.edu'
 
-alias ebrc="vim $ZSH/.zshrc" # Edit bashrc
-alias srcbrc="source $ZSH/.zshrc"
+alias ebrc="vim $HOME/.zshrc" # Edit bashrc
+alias srcbrc="source $HOME/.zshrc"
 
 # Colorized output
 alias diff='diff --color'
