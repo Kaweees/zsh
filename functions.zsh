@@ -1,5 +1,5 @@
 function sessionizer() {
-  echo "Function foo called"
+  zsh ~/.scripts/sessionizer.zsh
 }
 
 zle -N sessionizer
