@@ -41,3 +41,6 @@ export AUTO_NOTIFY_THRESHOLD=20
 export AUTO_NOTIFY_TITLE="%command finished executing"
 export AUTO_NOTIFY_BODY="It completed in %elapsed seconds with exit code %exit_code"
 AUTO_NOTIFY_IGNORE+=("docker" "man" "sleep")
+
+# Rust support
+export PATH="$HOME/.local/bin:$PATH"
