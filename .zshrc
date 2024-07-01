@@ -19,14 +19,14 @@ export ZSH="$HOME/.oh-my-zsh"
 export ZDOTDIR=$HOME
 
 # -------------------------------------------------------------------
-# Load prompt
-# -------------------------------------------------------------------
-[[ ! -f $ZDOTDIR/prompt.zsh ]] || source $ZDOTDIR/prompt.zsh
-
-# -------------------------------------------------------------------
 # Load plugins
 # -------------------------------------------------------------------
 [[ ! -f $ZDOTDIR/plugins.zsh ]] || source $ZDOTDIR/plugins.zsh
+
+# -------------------------------------------------------------------
+# Load prompt
+# -------------------------------------------------------------------
+[[ ! -f $ZDOTDIR/prompt.zsh ]] || source $ZDOTDIR/prompt.zsh
 
 # -------------------------------------------------------------------
 # Load environment variables
@@ -54,4 +54,3 @@ export ZDOTDIR=$HOME
 if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
     startx
 fi
-
