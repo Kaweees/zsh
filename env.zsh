@@ -44,3 +44,7 @@ AUTO_NOTIFY_IGNORE+=("docker" "man" "sleep")
 
 # Rust support
 export PATH="$HOME/.local/bin:$PATH"
+
+# pmpm support
+export PATH="$HOME/Library/pnpm:$PATH"
+
