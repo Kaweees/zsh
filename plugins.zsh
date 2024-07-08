@@ -18,7 +18,6 @@ zinit light zsh-users/zsh-history-substring-search # Fish shell's history search
 zinit light MichaelAquilina/zsh-auto-notify  # Automatically notify when a command finishes
 zinit light MichaelAquilina/zsh-you-should-use # Reminds you to use a command if you have it installed
 zinit light Aloxaf/fzf-tab # FZF tab completion
-zinit light romkatv/gitstatus # Git status prompt
 
 # Automatically load zsh-completions on startup
 autoload -Uz compinit && compinit
