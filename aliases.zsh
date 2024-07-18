@@ -22,6 +22,7 @@ alias diff='diff --color'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
+alias dir='ls --color=auto -lah'
 alias ls='ls --color=auto -lah'
 alias tree='tree -C'
 
