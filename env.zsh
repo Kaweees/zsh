@@ -48,3 +48,13 @@ export PATH="$HOME/.local/bin:$PATH"
 # pmpm support
 export PATH="$HOME/Library/pnpm:$PATH"
 
+# CUDA support
+export PATH="/usr/local/cuda/bin:$PATH"
+export DYLD_LIBRARY_PATH="/usr/local/cuda/lib:$DYLD_LIBRARY_PATH"
+
+export PATH="/usr/local/cuda/bin${PATH:+:${PATH}}"
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+
+# RISC-V toolchain support
+export PATH="/opt/riscv/bin:$PATH"
+export PATH="/usr/local/opt/riscv-gnu-toolchain/bin:$PATH"

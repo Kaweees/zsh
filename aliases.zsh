@@ -3,9 +3,15 @@
 #
 
 # Use the same editor
+alias nano='$EDITOR'
 alias vim='$EDITOR'
 alias vi='$EDITOR'
 alias code='$EDITOR'
+alias emacs='$EDITOR'
+alias cursor='$EDITOR'
+
+# Load tmux file
+alias tmux='tmux -f ~/.tmux.conf'
 
 # Wifi management
 alias wifi-gui='nm-connection-editor'
