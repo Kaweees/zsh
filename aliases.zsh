@@ -181,3 +181,10 @@ alias dpull='docker pull'
 # Search using PATTERN.
 alias hg='history | grep'
 alias ag='alias | grep'
+
+# Export ESP-IDF environment variables.
+# https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html
+alias get_idf=". $HOME/esp/esp-idf/export.sh"
+
+# Create a new project.
+alias new_idf="cp -r $HOME/esp/esp-idf/examples/get-started/blink ."
