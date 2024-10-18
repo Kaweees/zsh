@@ -8,7 +8,7 @@ alias vim='$EDITOR'
 alias vi='$EDITOR'
 alias code='$EDITOR'
 alias emacs='$EDITOR'
-alias cursor='$EDITOR'
+alias cursor='~/Documents/execs/cursor.appimage'
 
 # Load tmux file
 alias tmux='tmux -f ~/.tmux.conf'
