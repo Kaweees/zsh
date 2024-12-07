@@ -13,10 +13,6 @@ alias cursor='~/Documents/execs/cursor.appimage'
 # Load tmux file
 alias tmux='tmux -f ~/.tmux.conf'
 
-# Good python
-alias python='ipython'
-alias python3='ipython'
-
 # Wifi management
 alias wifi-gui='nm-connection-editor'
 alias wifi-tui='nmtui'
