@@ -35,6 +35,7 @@ setopt hist_ignore_all_dups # Never save duplicate commands
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups # Don't display duplicates when searching history
+[[ ! -f $HISTFILE ]] || mkdir -p $HOME/Documents && touch $HISTFILE # Create the history file if missing
 
 # Set automatic notification threshold
 export AUTO_NOTIFY_THRESHOLD=20
