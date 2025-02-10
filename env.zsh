@@ -24,7 +24,7 @@ setopt interactive_comments
 
 # History settings
 export HISTSIZE=10000000 # 10 million
-export HISTFILE="$HOME/Documents/.zsh_history" # History file location
+export HISTFILE="$HOME/.zsh_history" # History file location
 export SAVEHIST=$HISTSIZE
 export HISTDUP=erase # Erase duplicates in history
 setopt inc_append_history # Save every command before execution
@@ -35,7 +35,7 @@ setopt hist_ignore_all_dups # Never save duplicate commands
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups # Don't display duplicates when searching history
-[[ ! -f $HISTFILE ]] || mkdir -p $HOME/Documents && touch $HISTFILE # Create the history file if missing
+[[ ! -f $HISTFILE ]] || touch $HISTFILE # Create the history file if missing
 
 # Set automatic notification threshold
 export AUTO_NOTIFY_THRESHOLD=20
