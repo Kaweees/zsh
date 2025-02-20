@@ -10,8 +10,10 @@ alias code='$EDITOR'
 alias emacs='$EDITOR'
 alias cursor='~/Documents/execs/cursor.appimage'
 
-# Load tmux file
-alias tmux='tmux -f ~/.tmux.conf'
+# Python
+alias python='python3'
+alias pip='python3 -m pip'
+alias pip3='python3 -m pip'
 
 # Wifi management
 alias wifi-gui='nm-connection-editor'
@@ -126,7 +128,6 @@ alias s="sudo"
 
 # Activate virtual environment in current directory, otherwise try in the parent.
 alias act='source venv/bin/activate || source ../venv/bin/activate'
-
 alias pserver='python3 -m http.server'
 alias pip-user='PIP_REQUIRE_VIRTUALENV=false python3 -m pip'
 

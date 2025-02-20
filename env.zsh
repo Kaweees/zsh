@@ -43,6 +43,10 @@ export AUTO_NOTIFY_TITLE="%command finished executing"
 export AUTO_NOTIFY_BODY="It completed in %elapsed seconds with exit code %exit_code"
 AUTO_NOTIFY_IGNORE+=("docker" "man" "sleep")
 
+# Python support
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/bin/:$PATH"
+
 # Rust support
 export PATH="$HOME/.local/bin:$PATH"
 
