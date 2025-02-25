@@ -14,7 +14,7 @@ export EDITOR=nvim
 export MANPATH="/usr/local/man:$MANPATH"
 
 # Automatically cd into typed directory.
-setopt autocd		
+setopt autocd
 
 # Disable ctrl-s to freeze terminal.
 stty stop undef
