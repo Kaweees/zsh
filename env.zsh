@@ -45,7 +45,7 @@ AUTO_NOTIFY_IGNORE+=("docker" "man" "sleep")
 
 # Python support
 export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/bin/:$PATH"
+export PATH="/usr/bin:$PATH"
 
 # Rust support
 export PATH="$HOME/.local/bin:$PATH"

@@ -3,11 +3,6 @@
 #
 
 # Use the same editor
-alias nano='$EDITOR'
-alias vim='$EDITOR'
-alias vi='$EDITOR'
-alias code='$EDITOR'
-alias emacs='$EDITOR'
 alias cursor='~/Documents/execs/cursor.appimage'
 
 # Python
