@@ -47,14 +47,26 @@ To get a local copy of the project up and running on your machine, follow these 
 1. Clone the project repository
 
    ```sh
-   git clone https://github.com/Kaweees/zsh.git
-   cd zsh
+   git clone https://github.com/Kaweees/zsh.git ~/zsh
+   cd ~/zsh
    ```
 
 2. Install the [Gitstatus](https://github.com/romkatv/gitstatus) extension
 
    ```sh
    git clone --depth=1 https://github.com/romkatv/gitstatus.git ~/gitstatus
+   ```
+
+3. Set zsh as default shell
+
+   ```sh
+   chsh -s $(which zsh)
+   ```
+
+4. Stow the dotfiles
+
+   ```sh
+   stow -t ~ .
    ```
 
 <!-- PROJECT FILE STRUCTURE -->

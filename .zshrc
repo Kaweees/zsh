@@ -56,7 +56,15 @@ eval "$(direnv hook zsh)"
 # -------------------------------------------------------------------
 # Load ssh keys
 # -------------------------------------------------------------------
-ssh-add
+# Start SSH agent if not already running
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)"
+fi
+
+# Add SSH keys only if the agent is running
+if [ -n "$SSH_AUTH_SOCK" ]; then
+    ssh-add 2>/dev/null
+fi
 
 # -------------------------------------------------------------------
 #  Start X if not already running
