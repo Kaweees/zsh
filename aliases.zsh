@@ -2,9 +2,6 @@
 ### Content for aliases.zsh file
 #
 
-# Use the same editor
-alias cursor='~/Documents/execs/cursor.appimage'
-
 # Wifi management
 alias wifi-gui='nm-connection-editor'
 alias wifi-tui='nmtui'
