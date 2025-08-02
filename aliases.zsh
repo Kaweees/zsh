@@ -5,20 +5,9 @@
 # Use the same editor
 alias cursor='~/Documents/execs/cursor.appimage'
 
-# Python
-alias python='python3'
-alias pip='python3 -m pip'
-alias pip3='python3 -m pip'
-
 # Wifi management
 alias wifi-gui='nm-connection-editor'
 alias wifi-tui='nmtui'
-
-# SSH to Cal Poly
-alias mavillaf='ssh mavillaf@unix1.csc.calpoly.edu'
-
-alias ebrc="vim $HOME/.zshrc" # Edit bashrc
-alias srcbrc="source $HOME/.zshrc"
 
 # Colorized output
 alias diff='diff --color'
@@ -32,11 +21,6 @@ alias tree='tree -C'
 # Add sudo to common commands
 alias reboot='sudo reboot'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade'
-
-# Add apt-get to common commands
-alias apt='sudo apt'
-alias apt-get='sudo apt'
-alias apt-i='sudo apt install'
 
 # Confirm before overwriting each file, overridden with -f
 alias rm='rm -i'
