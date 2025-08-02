@@ -35,6 +35,7 @@ setopt hist_ignore_all_dups # Never save duplicate commands
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups # Don't display duplicates when searching history
+
 [[ ! -f $HISTFILE ]] || touch $HISTFILE # Create the history file if missing
 
 # Set automatic notification threshold
@@ -46,9 +47,26 @@ AUTO_NOTIFY_IGNORE+=("docker" "man" "sleep")
 # Python support
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/bin:$PATH"
-
-# Rust support
+export PATH="/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Use Nix-installed binaries
+if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
+  . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+fi
+
+# Optional: load Nix if installed via multi-user setup
+if [ -e /etc/profile.d/nix.sh ]; then
+  . /etc/profile.d/nix.sh
+fi
+
+# Fix for nix-shell compatibility with Zsh
+# This makes sure `nix-shell` sets the prompt correctly
+if [[ -n "$IN_NIX_SHELL" ]]; then
+  PROMPT='%F{green}%n@%m%f:%F{blue}%~%f [nix-shell] %# '
+fi
 
 # pmpm support
 export PATH="$HOME/Library/pnpm:$PATH"
@@ -56,10 +74,5 @@ export PATH="$HOME/Library/pnpm:$PATH"
 # CUDA support
 export PATH="/usr/local/cuda/bin:$PATH"
 export DYLD_LIBRARY_PATH="/usr/local/cuda/lib:$DYLD_LIBRARY_PATH"
-
 export PATH="/usr/local/cuda/bin${PATH:+:${PATH}}"
 export LD_LIBRARY_PATH="/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
-
-# RISC-V toolchain support
-export PATH="/opt/riscv/bin:$PATH"
-export PATH="/usr/local/opt/riscv-gnu-toolchain/bin:$PATH"
