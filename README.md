@@ -57,13 +57,19 @@ To get a local copy of the project up and running on your machine, follow these 
    git clone --depth=1 https://github.com/romkatv/gitstatus.git ~/gitstatus
    ```
 
-3. Set zsh as default shell
+3. Install the dependencies
 
    ```sh
-   chsh -s $(which zsh)
+   sudo apt install zsh stow direnv fzf tmux git
    ```
 
-4. Stow the dotfiles
+4. Set zsh as default shell
+
+   ```sh
+   sudo chsh -s $(which zsh)
+   ```
+
+5. Stow the dotfiles
 
    ```sh
    stow -t ~ .

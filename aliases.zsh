@@ -14,6 +14,7 @@ alias grep='grep --color=auto'
 alias dir='ls --color=auto -lah'
 alias ls='ls --color=auto -lah'
 alias tree='tree -C'
+alias history='fc -l'
 
 # Add sudo to common commands
 alias reboot='sudo reboot'

@@ -24,6 +24,7 @@ setopt interactive_comments
 
 # History settings
 export HISTSIZE=10000000 # 10 million
+export LISTMAX=$HISTSIZE # display all history
 export HISTFILE="$HOME/.zsh_history" # History file location
 export SAVEHIST=$HISTSIZE
 export HISTDUP=erase # Erase duplicates in history
