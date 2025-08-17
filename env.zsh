@@ -69,9 +69,6 @@ if [[ -n "$IN_NIX_SHELL" ]]; then
   PROMPT='%F{green}%n@%m%f:%F{blue}%~%f [nix-shell] %# '
 fi
 
-# pmpm support
-export PATH="$HOME/Library/pnpm:$PATH"
-
 # CUDA support
 export PATH="/usr/local/cuda/bin:$PATH"
 export DYLD_LIBRARY_PATH="/usr/local/cuda/lib:$DYLD_LIBRARY_PATH"

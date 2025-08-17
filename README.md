@@ -75,6 +75,18 @@ To get a local copy of the project up and running on your machine, follow these 
    stow -t ~ .
    ```
 
+6. Verify the installation
+
+   ```sh
+   getent passwd $USER # The last field should show zsh
+   ```
+
+7. Log out and log back in to apply the changes and verify the installation.
+
+   ```sh
+   echo $0 # Should show zsh or -zsh
+   ```
+
 <!-- PROJECT FILE STRUCTURE -->
 
 ## Project Structure
