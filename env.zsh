@@ -52,6 +52,7 @@ export PATH="/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.pixi/bin:$PATH"
 
 # Use Nix-installed binaries
 if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
