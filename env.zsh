@@ -71,7 +71,7 @@ if [[ -n "$IN_NIX_SHELL" ]]; then
 fi
 
 # CUDA support
-export PATH="/usr/local/cuda/bin:$PATH"
-export DYLD_LIBRARY_PATH="/usr/local/cuda/lib:$DYLD_LIBRARY_PATH"
-export PATH="/usr/local/cuda/bin${PATH:+:${PATH}}"
-export LD_LIBRARY_PATH="/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+export CUDA_HOME=/usr/local/cuda
+export PATH=$CUDA_HOME/bin:$PATH
+export DYLD_LIBRARY_PATH=$CUDA_HOME/lib:$DYLD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
