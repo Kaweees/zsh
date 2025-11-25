@@ -39,13 +39,24 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath' # Preview dir
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath' # Preview directories when using zoxide completion
 
 # Automatically load zsh-history-substring-search on startup
-zinit ice wait atload'_history_substring_search_config'
+zinit ice wait lucid load zsh-users/zsh-history-substring-search
+
+# Ensure unique search results
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 
 # Add in snippets from Oh My Zsh plugins
-# zinit snippet OMZP::git
-# zinit snippet OMZP::command-not-found
+zinit snippet OMZP::git
+zinit snippet OMZP::command-not-found
 
 # Shell integrations
+# FZF integration
+if [ -f /usr/share/doc/fzf/examples/completion.zsh ]; then
+  source /usr/share/doc/fzf/examples/completion.zsh
+fi
+if [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
+  source /usr/share/doc/fzf/examples/key-bindings.zsh
+fi
+
 # eval "$(fzf --zsh)" # Add FZF keybindings
-# eval "$(zoxide init --cmd cd zsh)" # Add Zoxide keybindings
+eval "$(zoxide init zsh)" # Add Zoxide keybindings
 

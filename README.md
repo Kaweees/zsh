@@ -60,7 +60,7 @@ To get a local copy of the project up and running on your machine, follow these 
 3. Install the dependencies
 
    ```sh
-   sudo apt install zsh stow direnv fzf tmux git libnotify-bin
+   sudo apt install zsh stow direnv fzf tmux git libnotify-bin zoxide
    ```
 
 4. Set zsh as default shell
