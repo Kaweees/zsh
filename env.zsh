@@ -71,7 +71,11 @@ if [[ -n "$IN_NIX_SHELL" ]]; then
 fi
 
 # CUDA support
-if [[ -d "/usr/local/cuda" ]]; then
+if [[ -d "/usr/local/cuda-13.0" ]]; then
+  export CUDA_HOME=/usr/local/cuda-13.0
+  export PATH=$CUDA_HOME/bin:$PATH
+  export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+elif [[ -d "/usr/local/cuda" ]]; then
   export CUDA_HOME=/usr/local/cuda
   export PATH=$CUDA_HOME/bin:$PATH
   export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
