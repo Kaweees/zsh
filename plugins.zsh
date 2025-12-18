@@ -38,9 +38,6 @@ zstyle ':completion:*' menu no # Disable default zshell completion menu
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath' # Preview directories when using cd completion
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath' # Preview directories when using zoxide completion
 
-# Automatically load zsh-history-substring-search on startup
-zinit ice wait lucid load zsh-users/zsh-history-substring-search
-
 # Ensure unique search results
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 
