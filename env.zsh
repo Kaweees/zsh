@@ -73,21 +73,21 @@ fi
 # CUDA support
 if [[ -d "/usr/local/cuda-13.0" ]]; then
   export CUDA_HOME=/usr/local/cuda-13.0
+  export CUDA_PATH=$CUDA_HOME
   export PATH=$CUDA_HOME/bin:$PATH
   export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 elif [[ -d "/usr/local/cuda" ]]; then
   export CUDA_HOME=/usr/local/cuda
+  export CUDA_PATH=$CUDA_HOME
   export PATH=$CUDA_HOME/bin:$PATH
   export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 elif [[ -d "/usr/lib/cuda" ]]; then
   # Ubuntu/Debian package manager installation
   export CUDA_HOME=/usr/lib/cuda
+  export CUDA_PATH=$CUDA_HOME
   export PATH=$CUDA_HOME/bin:$PATH
   export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 fi
-
-export PATH=$CUDA_HOME/bin:$PATH
-export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 
 # macOS-specific CUDA library path
 if [[ "$OSTYPE" == "darwin"* ]] && [[ -n "$CUDA_HOME" ]]; then
