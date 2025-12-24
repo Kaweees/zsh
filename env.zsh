@@ -89,6 +89,27 @@ elif [[ -d "/usr/lib/cuda" ]]; then
   export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 fi
 
+# Add NVIDIA driver libraries to LD_LIBRARY_PATH based on architecture
+ARCH=$(uname -m)
+if [[ "$ARCH" == "aarch64" ]]; then
+  NVIDIA_DRIVER_LIB="/usr/lib/aarch64-linux-gnu/nvidia"
+elif [[ "$ARCH" == "x86_64" ]]; then
+  NVIDIA_DRIVER_LIB="/usr/lib/x86_64-linux-gnu/nvidia"
+elif [[ "$ARCH" == "i386" ]] || [[ "$ARCH" == "i686" ]]; then
+  NVIDIA_DRIVER_LIB="/usr/lib/i386-linux-gnu/nvidia"
+fi
+
+# Also check for i386 libraries (for 32-bit compatibility on 64-bit systems)
+if [[ -z "$NVIDIA_DRIVER_LIB" ]] || [[ ! -d "$NVIDIA_DRIVER_LIB" ]]; then
+  if [[ -d "/usr/lib/i386-linux-gnu/nvidia" ]]; then
+    NVIDIA_DRIVER_LIB="/usr/lib/i386-linux-gnu/nvidia"
+  fi
+fi
+
+if [[ -n "$NVIDIA_DRIVER_LIB" ]] && [[ -d "$NVIDIA_DRIVER_LIB" ]]; then
+  export LD_LIBRARY_PATH=$NVIDIA_DRIVER_LIB:$LD_LIBRARY_PATH
+fi
+
 # macOS-specific CUDA library path
 if [[ "$OSTYPE" == "darwin"* ]] && [[ -n "$CUDA_HOME" ]]; then
   export DYLD_LIBRARY_PATH=$CUDA_HOME/lib:$DYLD_LIBRARY_PATH
