@@ -23,7 +23,7 @@ zinit light Aloxaf/fzf-tab # FZF tab completion
 autoload -Uz compinit && compinit
 
 # gitstatus prompt
-source ~/gitstatus/gitstatus.prompt.zsh
+[[ ! -f ~/gitstatus/gitstatus.prompt.zsh ]] || source ~/gitstatus/gitstatus.prompt.zsh
 
 # Replay all cached completions
 zinit cdreplay -q
