@@ -162,3 +162,6 @@ alias get_idf=". $HOME/esp/esp-idf/export.sh"
 
 # Create a new project.
 alias new_idf="cp -r $HOME/esp/esp-idf/examples/get-started/blink ."
+
+# Claude Code
+alias claude="claude --dangerously-skip-permissions"
