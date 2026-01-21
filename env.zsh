@@ -54,6 +54,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.pixi/bin:$PATH"
 
+# UV support
+export UV_VENV_CLEAR=1
+
 # Use Nix-installed binaries
 if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
   . "$HOME/.nix-profile/etc/profile.d/nix.sh"
