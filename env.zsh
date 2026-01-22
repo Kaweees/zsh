@@ -53,6 +53,7 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.pixi/bin:$PATH"
+export PATH="$HOME/.fzf/bin:$PATH"
 
 # UV support
 export UV_VENV_CLEAR=1
