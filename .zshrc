@@ -18,6 +18,11 @@ export DOTFILES="$HOME/Documents/GitHub/Projects/dotfiles"
 export ZDOTDIR=$HOME
 
 # -------------------------------------------------------------------
+# Load environment variables
+# -------------------------------------------------------------------
+[[ ! -f $ZDOTDIR/env.zsh ]] || source $ZDOTDIR/env.zsh
+
+# -------------------------------------------------------------------
 # Load plugins
 # -------------------------------------------------------------------
 [[ ! -f $ZDOTDIR/plugins.zsh ]] || source $ZDOTDIR/plugins.zsh
@@ -26,11 +31,6 @@ export ZDOTDIR=$HOME
 # Load prompt
 # -------------------------------------------------------------------
 [[ ! -f $ZDOTDIR/prompt.zsh ]] || source $ZDOTDIR/prompt.zsh
-
-# -------------------------------------------------------------------
-# Load environment variables
-# -------------------------------------------------------------------
-[[ ! -f $ZDOTDIR/env.zsh ]] || source $ZDOTDIR/env.zsh
 
 # -------------------------------------------------------------------
 # Load aliases

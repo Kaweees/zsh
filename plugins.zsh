@@ -46,14 +46,5 @@ zinit snippet OMZP::git
 zinit snippet OMZP::command-not-found
 
 # Shell integrations
-# FZF integration
-if [ -f /usr/share/doc/fzf/examples/completion.zsh ]; then
-  source /usr/share/doc/fzf/examples/completion.zsh
-fi
-if [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
-  source /usr/share/doc/fzf/examples/key-bindings.zsh
-fi
-
-# eval "$(fzf --zsh)" # Add FZF keybindings
-eval "$(zoxide init zsh)" # Add Zoxide keybindings
-
+eval "$(fzf --zsh)" # Add FZF keybindings
+eval "$(zoxide init zsh --cmd j)" # Add Zoxide keybindings
