@@ -60,7 +60,7 @@ To get a local copy of the project up and running on your machine, follow these 
 3. Install the dependencies
 
    ```sh
-   sudo apt install zsh stow direnv fzf tmux git libnotify-bin zoxide
+   sudo apt install -y zsh stow direnv fzf tmux git libnotify-bin zoxide vim neovim
    ```
 
 4. Set zsh as default shell
@@ -68,6 +68,14 @@ To get a local copy of the project up and running on your machine, follow these 
    ```sh
    sudo chsh -s $(which zsh)
    ```
+
+   Alternatively, edit `/etc/passwd` directly:
+
+   ```sh
+   sudo vim /etc/passwd
+   ```
+
+   Find your user line and change the shell at the end from `/bin/bash` to `/usr/bin/zsh`.
 
 5. Stow the dotfiles
 
