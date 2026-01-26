@@ -44,23 +44,23 @@ Before attempting to build this project, make sure you have [git](https://git-sc
 
 To get a local copy of the project up and running on your machine, follow these simple steps:
 
-1. Clone the project repository
+1. Install the dependencies
+
+   ```sh
+   sudo apt install -y zsh stow direnv fzf tmux git libnotify-bin zoxide vim neovim git git-lfs
+   ```
+
+2. Clone the project repository
 
    ```sh
    git clone https://github.com/Kaweees/zsh.git ~/zsh
    cd ~/zsh
    ```
 
-2. Install the [Gitstatus](https://github.com/romkatv/gitstatus) extension
+3. Install the [Gitstatus](https://github.com/romkatv/gitstatus) extension
 
    ```sh
    git clone --depth=1 https://github.com/romkatv/gitstatus.git ~/gitstatus
-   ```
-
-3. Install the dependencies
-
-   ```sh
-   sudo apt install -y zsh stow direnv fzf tmux git libnotify-bin zoxide vim neovim
    ```
 
 4. Set zsh as default shell
