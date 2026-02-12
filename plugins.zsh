@@ -46,5 +46,7 @@ zinit snippet OMZP::git
 zinit snippet OMZP::command-not-found
 
 # Shell integrations
-eval "$(fzf --zsh)" # Add FZF keybindings
+# Add FZF keybindings (fzf --zsh requires 0.48.0+, using source method for compatibility)
+[[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+[[ -f /usr/share/doc/fzf/examples/completion.zsh ]] && source /usr/share/doc/fzf/examples/completion.zsh
 eval "$(zoxide init zsh --cmd j)" # Add Zoxide keybindings
