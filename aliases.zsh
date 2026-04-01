@@ -163,5 +163,6 @@ alias get_idf=". $HOME/esp/esp-idf/export.sh"
 # Create a new project.
 alias new_idf="cp -r $HOME/esp/esp-idf/examples/get-started/blink ."
 
-# Claude Code
+# Vibe tools
 alias claude="claude --debug --dangerously-skip-permissions"
+alias codex="codex --dangerously-bypass-approvals-and-sandbox"

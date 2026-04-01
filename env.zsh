@@ -55,6 +55,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.pixi/bin:$PATH"
 export PATH="$HOME/.fzf/bin:$PATH"
 
+# Deduplicate PATH entries
+typeset -U path
+
 # UV support
 export UV_VENV_CLEAR=1
 
