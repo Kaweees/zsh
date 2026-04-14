@@ -121,3 +121,9 @@ fi
 if [[ "$OSTYPE" == "darwin"* ]] && [[ -n "$CUDA_HOME" ]]; then
   export DYLD_LIBRARY_PATH=$CUDA_HOME/lib:$DYLD_LIBRARY_PATH
 fi
+
+# Isaac Sim / Isaac Lab\
+export ISAACSIM_PATH="${HOME}/IsaacSim/_build/linux-$(uname -m)/release"
+export ISAACSIM_PYTHON_EXE="${ISAACSIM_PATH}/python.sh"
+export ISAACLAB_PATH="${HOME}/IsaacLab"
+export OPENBLAS_NUM_THREADS=1
