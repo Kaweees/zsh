@@ -30,6 +30,7 @@ export SAVEHIST=$HISTSIZE
 export HISTDUP=erase # Erase duplicates in history
 setopt inc_append_history # Save every command before execution
 setopt appendhistory # Prevent corruption from multiple sessions
+setopt hist_fcntl_lock # Use fcntl() file locking to prevent corruption from concurrent writes
 setopt sharehistory
 setopt hist_ignore_space # Don't save commands that start with a space
 setopt hist_ignore_all_dups # Never save duplicate commands
@@ -37,7 +38,7 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups # Don't display duplicates when searching history
 
-[[ ! -f $HISTFILE ]] || touch $HISTFILE # Create the history file if missing
+[[ -f $HISTFILE ]] || touch $HISTFILE # Create the history file if missing
 
 # Set automatic notification threshold
 export AUTO_NOTIFY_THRESHOLD=20
@@ -122,8 +123,9 @@ if [[ "$OSTYPE" == "darwin"* ]] && [[ -n "$CUDA_HOME" ]]; then
   export DYLD_LIBRARY_PATH=$CUDA_HOME/lib:$DYLD_LIBRARY_PATH
 fi
 
-# Isaac Sim / Isaac Lab\
-export ISAACSIM_PATH="${HOME}/IsaacSim/_build/linux-$(uname -m)/release"
+# Isaac Sim / Isaac Lab
+export ISAACSIM_ROOT_PATH="${HOME}/IsaacSim"
+export ISAACSIM_PATH="${ISAACSIM_ROOT_PATH}/_build/linux-$(uname -m)/release"
 export ISAACSIM_PYTHON_EXE="${ISAACSIM_PATH}/python.sh"
 export ISAACLAB_PATH="${HOME}/IsaacLab"
 export OPENBLAS_NUM_THREADS=1
