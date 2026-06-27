@@ -128,4 +128,3 @@ export ISAACSIM_ROOT_PATH="${HOME}/IsaacSim"
 export ISAACSIM_PATH="${ISAACSIM_ROOT_PATH}/_build/linux-$(uname -m)/release"
 export ISAACSIM_PYTHON_EXE="${ISAACSIM_PATH}/python.sh"
 export ISAACLAB_PATH="${HOME}/IsaacLab"
-export OPENBLAS_NUM_THREADS=1
