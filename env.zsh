@@ -65,7 +65,7 @@ export UV_VENV_CLEAR=1
 
 # Hugging Face
 export HF_HUB_CACHE=/models
-export HF_HUB_ENABLE_HF_TRANSFER=1
+export HF_XET_HIGH_PERFORMANCE=1
 
 # Use Nix-installed binaries
 if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
