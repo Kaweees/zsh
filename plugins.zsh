@@ -20,7 +20,8 @@ zinit light MichaelAquilina/zsh-you-should-use # Reminds you to use a command if
 zinit light Aloxaf/fzf-tab # FZF tab completion
 
 # Automatically load zsh-completions on startup
-autoload -Uz compinit && compinit
+fpath=("$HOME/.grok/completions/zsh" $fpath)
+autoload -Uz compinit && compinit -C
 
 # gitstatus prompt
 [[ ! -f ~/gitstatus/gitstatus.prompt.zsh ]] || source ~/gitstatus/gitstatus.prompt.zsh
