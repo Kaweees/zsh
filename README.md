@@ -47,7 +47,7 @@ To get a local copy of the project up and running on your machine, follow these 
 1. Install the dependencies
 
    ```sh
-   sudo apt install -y zsh stow direnv fzf tmux git libnotify-bin zoxide vim neovim git git-lfs
+   sudo apt install -y zsh stow direnv fzf tmux libnotify-bin zoxide vim neovim gh git git-lfs
    ```
 
 2. Clone the project repository
