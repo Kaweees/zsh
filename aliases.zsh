@@ -164,6 +164,6 @@ alias get_idf=". $HOME/esp/esp-idf/export.sh"
 alias new_idf="cp -r $HOME/esp/esp-idf/examples/get-started/blink ."
 
 # Vibe tools
-alias claude="claude --debug --dangerously-skip-permissions"
+alias claude="claude --debug --dangerously-skip-permissions --effort ultracode"
 alias codex="codex --dangerously-bypass-approvals-and-sandbox"
 alias grok="grok --yolo"
