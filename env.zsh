@@ -56,6 +56,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.pixi/bin:$PATH"
 export PATH="$HOME/.fzf/bin:$PATH"
 export PATH="$HOME/.grok/bin:$PATH"
+export PATH="$HOME/.opencode/bin:$PATH"
+export PATH="$HOME/.kimi-code/bin:$PATH"
 
 # Deduplicate PATH entries
 typeset -U path

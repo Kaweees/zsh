@@ -21,6 +21,7 @@ zinit light Aloxaf/fzf-tab # FZF tab completion
 
 # Automatically load zsh-completions on startup
 fpath=("$HOME/.grok/completions/zsh" $fpath)
+fpath=("$HOME/.docker/completions" $fpath)
 autoload -Uz compinit && compinit -C
 
 # gitstatus prompt
