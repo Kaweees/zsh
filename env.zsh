@@ -69,6 +69,9 @@ export UV_VENV_CLEAR=1
 export HF_HUB_CACHE=/models
 export HF_XET_HIGH_PERFORMANCE=1
 
+# Claude Code
+export CLAUDE_CODE_SANDBOXED=1
+
 # Use Nix-installed binaries
 if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
   . "$HOME/.nix-profile/etc/profile.d/nix.sh"
