@@ -71,6 +71,9 @@ export HF_XET_HIGH_PERFORMANCE=1
 # Claude Code
 export CLAUDE_CODE_SANDBOXED=1
 
+# Kimi Code
+export KIMI_CODE_TRUST_WORKSPACE=1
+
 # Use Nix-installed binaries
 if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
   . "$HOME/.nix-profile/etc/profile.d/nix.sh"
