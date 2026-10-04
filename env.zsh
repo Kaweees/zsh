@@ -66,7 +66,6 @@ typeset -U path
 export UV_VENV_CLEAR=1
 
 # Hugging Face
-export HF_HUB_CACHE=/models
 export HF_XET_HIGH_PERFORMANCE=1
 
 # Claude Code
