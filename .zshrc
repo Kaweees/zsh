@@ -20,32 +20,32 @@ export ZDOTDIR=$HOME
 # -------------------------------------------------------------------
 # Load environment variables
 # -------------------------------------------------------------------
-[[ ! -f $ZDOTDIR/env.zsh ]] || source $ZDOTDIR/env.zsh
+[[ ! -r "$ZDOTDIR/env.zsh" ]] || source "$ZDOTDIR/env.zsh"
 
 # -------------------------------------------------------------------
 # Load plugins
 # -------------------------------------------------------------------
-[[ ! -f $ZDOTDIR/plugins.zsh ]] || source $ZDOTDIR/plugins.zsh
+[[ ! -r "$ZDOTDIR/plugins.zsh" ]] || source "$ZDOTDIR/plugins.zsh"
 
 # -------------------------------------------------------------------
 # Load prompt
 # -------------------------------------------------------------------
-[[ ! -f $ZDOTDIR/prompt.zsh ]] || source $ZDOTDIR/prompt.zsh
+[[ ! -r "$ZDOTDIR/prompt.zsh" ]] || source "$ZDOTDIR/prompt.zsh"
 
 # -------------------------------------------------------------------
 # Load aliases
 # -------------------------------------------------------------------
-[[ ! -f $ZDOTDIR/aliases.zsh ]] || source $ZDOTDIR/aliases.zsh
+[[ ! -r "$ZDOTDIR/aliases.zsh" ]] || source "$ZDOTDIR/aliases.zsh"
 
 # -------------------------------------------------------------------
 # Load functions
 # -------------------------------------------------------------------
-[[ ! -f $ZDOTDIR/functions.zsh ]] || source $ZDOTDIR/functions.zsh
+[[ ! -r "$ZDOTDIR/functions.zsh" ]] || source "$ZDOTDIR/functions.zsh"
 
 # -------------------------------------------------------------------
 # Load keybinds
 # -------------------------------------------------------------------
-[[ ! -f $ZDOTDIR/keybinds.zsh ]] || source $ZDOTDIR/keybinds.zsh
+[[ ! -r "$ZDOTDIR/keybinds.zsh" ]] || source "$ZDOTDIR/keybinds.zsh"
 
 # -------------------------------------------------------------------
 # Load direnv
