@@ -21,6 +21,7 @@ export ZDOTDIR=$HOME
 # Load environment variables
 # -------------------------------------------------------------------
 [[ ! -r "$ZDOTDIR/env.zsh" ]] || source "$ZDOTDIR/env.zsh"
+[[ ! -r "$ZDOTDIR/env.local.zsh" ]] || source "$ZDOTDIR/env.local.zsh"
 
 # -------------------------------------------------------------------
 # Load plugins
