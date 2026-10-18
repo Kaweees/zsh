@@ -145,8 +145,8 @@ alias dup='docker-compose up'
 alias dub='docker-compose up --build'
 alias ddown='docker-compose down'
 alias drestart='docker-compose restart'
-# Usage: dexec COMMAND
-alias dexec='docker exec -it /bin/sh'
+# Usage: dexec CONTAINER COMMAND
+alias dexec='docker exec -it'
 # Update images
 alias dpull='docker pull'
 
