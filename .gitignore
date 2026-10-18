@@ -1,3 +1,6 @@
+# Machine-specific settings and credentials
+/env.local.zsh
+
 # Zsh history
 .zsh_history
 
