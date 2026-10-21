@@ -14,7 +14,7 @@ export LC_ALL=en_US.UTF-8
 # -------------------------------------------------------------------
 
 # Set the directory where the dotfiles and zsh are stored
-export DOTFILES="$HOME/Documents/GitHub/Projects/dotfiles"
+export DOTFILES="$HOME/dotfiles"
 export ZDOTDIR=$HOME
 
 # -------------------------------------------------------------------
